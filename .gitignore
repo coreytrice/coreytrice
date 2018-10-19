@@ -1,0 +1,20 @@
+log/*
+*.swp
+*.swo
+/vendor/
+wp-content/uploads
+.htaccess
+wp-config.php
+*.DS_Store
+
+# Ignore SASS cache folder
+**/.sass-cache
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+
+# Styles map
+*.css.map
+
+htdocs/wp-content/themes/corey
