@@ -1,0 +1,24 @@
+{
+    "globals"   : {
+        "corey"         : false,
+        "Handlebars"    : false
+    },
+    "bitwise"   : true,
+    "browser"   : true,
+    "curly"     : true,
+    "eqeqeq"    : true,
+    "es5"       : true,
+    "devel"     : true,
+    "forin"     : true,
+    "funcscope" : true,
+    "jquery"    : true,
+    "latedef"   : false,
+    "laxbreak"  : true,
+    "laxcomma"  : true,
+    "maxdepth"  : 3,
+    "maxparams" : 8,
+    "noarg"     : true,
+    "nonew"     : true,
+    "undef"     : true,
+    "unused"    : true
+}

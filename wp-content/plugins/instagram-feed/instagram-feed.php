@@ -248,7 +248,7 @@ function display_instagram($atts, $content = null) {
     //Follow button HTML
 	$sb_instagram_follow_btn_classes = '';
 	if( strpos($sb_instagram_follow_btn_styles, 'background') !== false ) $sb_instagram_follow_btn_classes = ' sbi_custom';
-    $sb_instagram_follow_btn_html = '<div class="sbi_follow_btn'.$sb_instagram_follow_btn_classes.'"><a href="https://www.instagram.com/" '.$sb_instagram_follow_btn_styles.' target="_blank"><i class="fa fab fa-instagram"></i>'.esc_html( stripslashes( $sb_instagram_follow_btn_text ) ).'</a></div>';
+    $sb_instagram_follow_btn_html = '<div class="cta"><a href="https://www.instagram.com/coreytrice/" '.$sb_instagram_follow_btn_styles.' target="_blank"><i class="fa fab fa-instagram"></i> '.esc_html( stripslashes( $sb_instagram_follow_btn_text ) ).'</a></div>';
 
     //Mobile
     $sb_instagram_disable_mobile = $atts['disablemobile'];

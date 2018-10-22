@@ -1,0 +1,218 @@
+# Check https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md for info
+linters:
+  BangFormat:
+    space_before_bang: true
+    space_after_bang: false
+
+  BorderZero:
+    enabled: true
+
+  ColorKeyword:
+    enabled: true
+
+  ColorVariable:
+    enabled: true
+
+  Comment:
+    enabled: true
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: true
+
+  DisableLinterReason:
+    enabled: false
+
+  # If old browser is not supported you can enable this
+  DuplicateProperty:
+    enabled: false
+
+  ElsePlacement:
+    style: same_line
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+
+  EmptyRule:
+    enabled: true
+
+  ExtendDirective:
+    enabled: false
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: short # or 'long'
+
+  HexNotation:
+    enabled: true
+    style: lowercase # or 'uppercase'
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: false
+
+  # Disable this if you want to override vendor styles
+  ImportantRule:
+    enabled: false
+
+  ImportPath:
+    leading_underscore: false
+    filename_extension: false
+
+  Indentation:
+    allow_non_nested_indentation: false
+    character: spaceforce_nesting
+    enabled: true
+    width: 4
+
+  LeadingZero:
+    enabled: true
+    style: exclude_zero # or 'include_zero'
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+
+  NameFormat:
+    enabled: true
+    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
+
+  NestingDepth:
+    enabled: true
+    max_depth: 6
+    ignore_parent_selectors: false
+
+  PseudoElement:
+    enabled: false
+
+  PlaceholderInExtend:
+    enabled: true
+
+  # If you want to limit the property count in rule set enable this
+  PropertyCount:
+    enabled: false
+    # max_properties: 10
+    # include_nested: false
+
+  # More info at https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md#propertysortorder
+  PropertySortOrder:
+    enabled: true
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+
+  PropertyUnits:
+    global: ['px', 'em', '%', 's', cm, pt] # Allow relative units globally, more units like vw, vh, vmin, vmax can be allowed
+    # Set unit based on property
+    # properties:
+      # border: ['px'] # Only pixels
+      # line-height: [] # No units allowed
+      # margin: ['em', 'rem']
+
+  QualifyingElement:
+    allow_element_with_attribute: true
+    allow_element_with_class: true
+    allow_element_with_id: true
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 5
+
+  # Naming convention
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_lowercase # my-attribute
+    class_convention: '[a-z\-\_]+' # .my-class my_class (preferred .my-class)
+    id_convention: '[a-z\-\_]+' # #my_id or #my-id (preferred #my_id)
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: true
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+    style: one_space # or no_space or at_least_one_space
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space # or no_space or at_least_one_space or one_space_or_newline or aligned
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceAfterVariableName:
+    enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space # or no_space
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space # or new_line
+    allow_single_line_padding: true
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes # or double_quotes
+
+  TrailingSemicolonAfterPropertyValue:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+
+  TrailingZero:
+    enabled: true
+
+  TransitionAll:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
+  UrlFormat:
+    enabled: true # disable it if you need to use assets from different domain
+
+  UrlQuotes:
+    enabled: true
+
+  # Enable this if we want to force using variables rather than literals
+  VariableForProperty:
+    enabled: false
+
+  VendorPrefix:
+    enabled: true
+    # Check https://github.com/brigade/scss-lint/tree/master/data/prefixed-identifiers for predefined properties
+    identifier_list: base # or bourbon
+
+  ZeroUnit:
+    enabled: true
+
+  # Enable this if using compass
+  # Check https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/compass/README.md for more info
+  Compass::*:
+    enabled: false
