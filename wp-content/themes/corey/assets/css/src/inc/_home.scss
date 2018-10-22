@@ -1,0 +1,73 @@
+#home-page {
+    .hero {
+        background: #222 url('/wp-content/themes/corey/assets/images/hero.jpg') no-repeat center;
+        background-size: 100%;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .project {
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            &:hover {
+                -webkit-animation-name: project-hover;
+                -webkit-animation-duration: 0.3s;
+                animation-name: project-hover;
+                animation-duration: 0.3s;
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+            }
+        }
+
+        .project-wrap {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .project-card {
+                margin: 10px;
+                self-align: center;
+            }
+        }
+    }
+}
+
+.what-i-do {
+    .flex-wrap {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-container {
+        padding: 25px;
+        min-width: 250px;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    i {
+        font-size: 5em;
+    }
+}
+
+@-webkit-keyframes project-hover {
+    0%      {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+    100%    {-webkit-filter: grayscale(0); filter: grayscale(0);}
+}
+
+@keyframes project-hover {
+    0%      {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+    100%    {-webkit-filter: grayscale(0); filter: grayscale(0);}
+}
+
+
+
+

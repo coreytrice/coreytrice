@@ -1,0 +1,134 @@
+#contact {
+    .hero {
+        background: #222 url('/wp-content/themes/corey/assets/images/contact-hero.jpg') no-repeat center;
+        background-size: 100%;
+    }
+
+    .contact-methods {
+        i {
+            font-size: 5em;
+        }
+
+        .flex-container {
+            margin: 20px;
+        }
+    }
+
+    .contact-wrap {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .flex-container {
+            min-width: 285px;
+        }
+    }
+
+    .contact-form-modal {
+        display: none;
+        z-index: 100;
+        overflow: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: calc(100% - 100px);
+        padding: 40px;
+        width: 33%;
+        max-width: 1000px;
+
+        .contact-close {
+            float: right;
+            margin: -30px -30px 0 0;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        .required {
+            text-align: left;
+            font-size: 0.7em;
+            color: #ddd;
+        }
+
+        div.contact-info {
+            padding: 3px 0;
+            margin: 0;
+            text-align: left;
+            color: #999;
+            font-size: 0.8em;
+
+            input {
+                border: 0;
+                border-bottom: 1px solid #999;
+                font-size: 1em;
+                width: 100%;
+                line-height: 1.5em
+            }
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 10em;
+            padding: 2px;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+
+        .contact-cancel {
+            float: right;
+        }
+
+        .cta {
+            text-align: left;
+        }
+    }
+
+    .cta.message-me {
+        margin-bottom: 50px;
+    }
+
+    .contact-map {
+        background: $bg-dark url('/wp-content/themes/corey/assets/images/flower-mound-area.jpg') no-repeat center center;
+        height: 450px;
+        padding: 0;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #contact .contact-form-modal {
+        width: 80%;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #contact .contact-form-modal {
+        width: 80%;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #contact .contact-form-modal {
+        width: 66%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #contact .contact-form-modal {
+        width: 45%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #contact .contact-form-modal {
+        width: 33%;
+    }
+}
+
+
+
+

@@ -1,0 +1,27 @@
+footer {
+    padding: 50px 0;
+    margin: 0;
+
+    h3 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: lighter;
+    }
+
+    .navigation ul {
+        color: #777;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .social-navigation li{
+        vertical-align: middle;
+    }
+
+    .copyright {
+        font-size: 12px;
+        color: #666;
+        margin: 30px;
+    }
+}

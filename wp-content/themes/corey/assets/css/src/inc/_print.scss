@@ -1,0 +1,91 @@
+@media print {
+    body {
+        font-size: 8pt;
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+
+    .site-content {
+        padding: 0;
+    }
+
+    #resume {
+        .hero {
+            display: none;
+        }
+
+        .section {
+            padding: 0;
+            margin: 0;
+        }
+
+        .content-wrap {
+            width: 100%;
+        }
+
+        .resume-wrap {
+            margin: 0;
+            padding: 0;
+
+            .print-this {
+                display: none;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .resume-name-title h4 {
+                font-size: 2em;
+                padding: 0;
+                margin-top: 15pt;
+            }
+
+            .resume-phone {
+                span {
+                    display: none;
+                }
+
+                &::after {
+                    content: '443.235.6921';
+                }
+            }
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+

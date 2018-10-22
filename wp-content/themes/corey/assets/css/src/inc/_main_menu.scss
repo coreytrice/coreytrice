@@ -1,0 +1,85 @@
+.navigation {
+    padding: 8px;
+    color: $font-light;
+    overflow: auto;
+
+    ul {
+        display: inline;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        color: $font-light;
+
+        li a {
+            display: block;
+            padding: 10px 20px;
+
+            &:hover {
+                -webkit-animation-name: menu-item-hover;
+                -webkit-animation-duration: 0.2s;
+                animation-name: menu-item-hover;
+                animation-duration: 0.2s;
+                color: #fff;
+            }
+        }
+    }
+
+    &.navigation-top ul li a {
+        float: right;
+    }
+}
+
+header .navigation ul:hover {
+    -webkit-animation-name: menu-hover;
+    -webkit-animation-duration: 0.2s;
+    animation-name: menu-hover;
+    animation-duration: 0.2s;
+    color: #777;
+}
+
+@-webkit-keyframes menu-hover {
+    0%      {color: #fff;}
+    100%    {color: #777;}
+}
+
+@keyframes menu-hover {
+    0%      {color: #fff;}
+    100%    {color: #777;}
+}
+
+@-webkit-keyframes menu-item-hover {
+    0% {color: inherit;}
+    100% {color: #fff;}
+}
+
+@keyframes menu-item-hover {
+    0% {color: inherit;}
+    100% {color: #fff;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Medium devices (landscape tablets, 991px and under) */
+@media only screen and (max-width: 991px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 767px and under) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Extra small devices (phones, 600px and under) */
+@media only screen and (max-width: 600px) {
+    #top-menu a {
+        font-size: .8em;
+    }
+}
+
+
+
+
