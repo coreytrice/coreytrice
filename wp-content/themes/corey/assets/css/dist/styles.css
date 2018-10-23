@@ -120,16 +120,10 @@ h5 {
 }
 
 .flex-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-container {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1;
-  -ms-flex: 1 1;
   flex: 1 1;
 }
 
@@ -152,7 +146,6 @@ h5 {
   left: 0;
   overflow: hidden;
   position: fixed;
-  -webkit-transition: bottom .25s;
   transition: bottom .25s;
   width: 100%;
   z-index: 9000;
@@ -381,17 +374,8 @@ header .navigation ul:hover {
 }
 #home-page .project .project-wrap {
   width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 #home-page .project .project-wrap .project-card {
@@ -400,17 +384,8 @@ header .navigation ul:hover {
 }
 
 .what-i-do .flex-wrap {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .what-i-do .flex-container {
@@ -509,17 +484,8 @@ header .navigation ul:hover {
     padding: 75px 50px;
   }
   #resume .resume-wrap .resume-skills .flex-wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   #resume .resume-wrap .resume-skills .flex-container {
@@ -552,17 +518,8 @@ header .navigation ul:hover {
   margin: 20px;
 }
 #contact .contact-wrap {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 #contact .contact-wrap .flex-container {
@@ -575,8 +532,6 @@ header .navigation ul:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-height: calc(100% - 100px);
   padding: 40px;
@@ -671,19 +626,19 @@ header .navigation ul:hover {
   }
 
   h1 {
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
     font-size: 2em;
   }
 
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
   h4 {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
   h5 {
@@ -698,18 +653,12 @@ header .navigation ul:hover {
     padding: 0;
   }
 
-  #resume {
-    padding: 50pt;
-  }
   #resume .hero {
     display: none;
   }
-  #resume section {
+  #resume .section {
     padding: 0;
     margin: 0;
-  }
-  #resume section.chat-link {
-    display: none;
   }
   #resume .content-wrap {
     width: 100%;

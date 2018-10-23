@@ -6,8 +6,6 @@
     function corey_email_callback() {
         $post = $_POST;
 
-error_log('POST = ' . print_r($post, true));
-
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             //Check for name or error out
             if(isset($post['name']) && !empty($post['name'])) {

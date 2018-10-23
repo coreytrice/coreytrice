@@ -45,7 +45,7 @@ get_header();
             <h3 class="branding"><span>professional</span> history</h3>
             <p>Check out what I've done over the years, and see if we could work together on your site. I am a dedicated developer, a problem solver, and a quick study, so even if I don't have experience with the technology you use I can always learn.</p>
             <div class="cta">
-                <a href="<?php echo esc_url(get_page_link(5)); ?>">view résumé</a>
+                <a href="<?php echo esc_url(get_page_link(RESUME_PAGE_ID)); ?>">view résumé</a>
             </div>
         </div>
     </section>

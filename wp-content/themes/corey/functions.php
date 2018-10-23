@@ -250,6 +250,9 @@ JS;
     }
 
 $grunt_constant_file = get_template_directory() . '/inc/grunt-constant.php';
+if(corey_is_prod() && file_exists($grunt_constant_file)) {
+    require $grunt_constant_file;
+}
 
 // Add email script
 require get_template_directory() . '/inc/email.php';

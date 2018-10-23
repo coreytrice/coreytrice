@@ -98,12 +98,12 @@ get_header();
             </div>
         </div> <!-- .light-bg -->
     </section>
-    <section class="light-bg">
+    <section class="light-bg chat-link">
         <div class="content-wrap">
             <h3 class="branding"><span>let's</span> chat</h3>
             <p>If you would like to work together, then give me a call or shoot me an email</p>
             <div class="cta">
-                <a href="<?php echo esc_url(get_page_link(41)); ?>">contact me</a>
+                <a href="<?php echo esc_url(get_page_link(CONTACT_PAGE_ID)); ?>">contact me</a>
             </div>
         </div>
     </section>
