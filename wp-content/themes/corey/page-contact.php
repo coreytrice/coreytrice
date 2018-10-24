@@ -15,7 +15,7 @@ get_header();
     </section>
     <section class="med-bg">
         <div class="content-wrap contact-methods">
-            <p>To get in contact with me please give me a call or message me directly from the form available here.</p>
+            <p>To get in contact with me please give me a call or send me an email.</p>
             <div class="flex-wrap contact-wrap">
                 <div class="flex-container light-bg">
                     <h5>Contact Info</h5>
@@ -25,9 +25,12 @@ get_header();
                 <div class="flex-container light-bg">
                     <h5>Email Me</h5>
                     <i class="material-icons">email</i>
-                    <div class="cta message-me">
-                        <a href="javascript:;" id="email-me">message me</a></p>
+                    <div class="branding-hover">
+                        <a href="mailto:corey@coreytrice.com">message me</a>
                     </div>
+                    <!-- <div class="cta message-me">
+                        <a href="javascript:;" id="email-me">message me</a></p>
+                    </div> -->
                 </div>
             </div>
         </div>

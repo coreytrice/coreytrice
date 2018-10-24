@@ -118,6 +118,9 @@ function corey_scripts() {
     wp_register_script('corey-all', get_template_directory_uri() . $script_path, [], $script_version);
     wp_enqueue_script('corey-all');
 
+    wp_deregister_script('jquery-core');
+    wp_register_script('jquery-core', null, ['corey-all'], null);
+
 }
 add_action('wp_enqueue_scripts', 'corey_scripts');
 

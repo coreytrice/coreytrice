@@ -18,11 +18,12 @@ module.exports = function(grunt) {
      */
     project: {
       base: 'wp-content/themes/corey',
+      baseAssets: '<%= project.base %>/assets',
 
       /**
        * CSS folders
        */
-      baseCSS: '<%= project.base %>/assets/css',
+      baseCSS: '<%= project.baseAssets %>/css',
       srcCSS: '<%= project.baseCSS %>/src',
       devCSS: '<%= project.baseCSS %>/dev',
       distCSS: '<%= project.baseCSS %>/dist',
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
       /**
        * JS folders
        */
-      baseJS: '<%= project.base %>/assets/js',
+      baseJS: '<%= project.baseAssets %>/js',
       srcJS: '<%= project.baseJS %>/src',
       devJS: '<%= project.baseJS %>/dev',
       distJS: '<%= project.baseJS %>/dist',
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
       JS: [
         // Vendor JS will go in at beginning followed by all other JS
         // This will only look for all JS files in inc folder
+        '<%= project.vendorJS %>/jquery-3.3.1.min.js',
         '<%= project.vendorJS %>/html5.js',
         '<%= project.vendorJS %>/handlebars.runtime-v4.0.12.js',
         '<%= project.srcJS %>/handlebars-helper.js',
@@ -51,6 +53,7 @@ module.exports = function(grunt) {
         // '<%= project.srcJS %>/variables.js',
         '<%= project.srcJS %>/lang/en_US.js',
         '<%= project.srcJS %>/inc/**/*.js',
+        '<%= project.srcHandlebars %>/global.js',
       ],
 
       /**
@@ -61,7 +64,7 @@ module.exports = function(grunt) {
       /**
        * Image folder
        */
-      images: '<%= project.base %>/assets/images'
+      images: '<%= project.baseAssets %>/images'
     },
 
     /*
@@ -222,7 +225,7 @@ module.exports = function(grunt) {
         },
         compile : {
             files : {
-                '<%= project.srcHandlebars %>/scripts.js'  : '<%= project.srcHandlebars %>/**/*.hb',
+                '<%= project.srcHandlebars %>/global.js'  : '<%= project.srcHandlebars %>/**/*.hb',
             },
         },
     },
@@ -236,14 +239,14 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= project.base %>',
-          dest: '<%= project.base %>/',
+          cwd: '<%= project.baseAssets %>',
+          dest: '<%= project.baseAssets %>/',
           src: [
             'css/dist/styles.min.css',
             'js/dist/scripts.min.js'
           ],
           rename: function(dest, src) {
-            var fileName = dest + src.replace(/.min./gi, function(x) {
+            var fileName = dest + src.replace(/.min./gi, function (x) {
                 return '.<%= assetVersion %>.'
               });
             return fileName

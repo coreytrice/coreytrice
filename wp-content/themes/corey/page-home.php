@@ -58,7 +58,7 @@ $siteDescription = get_bloginfo('description', 'display');
 
                 if($projects->have_posts()) :
                     while($projects->have_posts()) : $projects->the_post();
-                        get_template_part('template/page/project-home', 'page');
+                        get_template_part('template/project/project-card', 'content');
                     endwhile;
                 endif;
 

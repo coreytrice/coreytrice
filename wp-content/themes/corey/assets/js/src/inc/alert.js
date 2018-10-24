@@ -9,7 +9,7 @@ this.module('corey', function () {
         ;
 
         this.init = function() {
-            wrap = document.getElementById('#alert_wrapper');
+            wrap = $('#alert_wrapper');
         };
 
         this.removeAlert = function() {
@@ -34,7 +34,6 @@ this.module('corey', function () {
          * @param {boolean} autoClose   - **Optional** (Default: true) Should this be auto-closed
          */
         this.add = function (alertType, msg, time, autoClose) {
-
             var   temp  = Handlebars.templates['nags/banner']
                 , data  = {
                       'alertType'   : alertType || 'alert-warning'

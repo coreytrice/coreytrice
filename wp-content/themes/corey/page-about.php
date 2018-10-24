@@ -22,9 +22,9 @@ get_header();
     <section class="dark-bg">
         <div class="content-wrap">
             <h3>how i got to this point</h3>
-            <p>I started a construction company back in the mid 2000s and everything was going well until the 2008 housing crisis made most people a little weary about spending money on big construction projects. I had just gotten married and a few months later we found out we were going to have a baby.</p>
+            <p>I started a construction company back in the mid 2000s and everything was going well until the 2008 housing crisis made most people a little leary about spending money on big construction projects. I had just gotten married and a few months later we found out we were going to have a baby.</p>
             <p>I realized that I wanted to do something that could provide a little more stability for our growing family, so I decided to go to college to get my degree in web design and development. I had been building websites as a hobby since the late 90s and really loved the challenges/excitement of building something from scratch and seeing the final product.</p>
-            <p>Once I finished my Bachelor's degree, I went on to get my Master's degree and started working full-time as a web developer. I loved it! I was working in an agency on a site for a new start-up while I finished my Master's. Then I moved to into the corporate development world on small team that managed the site for a news organization reaching millions of unique users every month.</p>
+            <p>Once I finished my Bachelor's degree, I went on to get my Master's degree and started working full-time as a web developer. I loved it! I was working in an agency on a site for a new start-up while I finished my Master's. Then I moved into the corporate development world on small team that managed the site for a news organization reaching millions of unique users every month.</p>
             <p>I have been fortunate to get to work with amazing teams filled with talented developers, and I have been able to learn from people that I consider mentors and friends. I have worked very hard to get to this point in my life where I get to wear shorts and flip-flops every day instead of work boots or suits and ties. I love what I do!</p>
         </div>
     </section>

@@ -9,14 +9,11 @@ get_header(); ?>
     <section class="dark-bg hero">
         <div class="content-wrap">
             <h1 class="branding"><span>404</span> not found</h1>
-            <h2>We're sorry this happened...</h2>
-        </div>
-    </section>
-    <section class="light-bg">
-        <div class="content-wrap">
-            <p>It looks like nothing was found at this location. Maybe try a search?</p>
-
-            <?php get_search_form(); ?>
+            <p>I bet this <span class="branding"><span>corey</span> trice</span> guy wishes he made this page, especially now that you are looking for it...</p>
+            <div class="cta">
+                <a href="/">home</a>
+            </div>
+            <?php // get_search_form(); ?>
 
         </div><!-- .content-wrap -->
     </section>

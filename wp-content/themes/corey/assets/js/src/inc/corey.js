@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
                 var   d     = JSON.parse(data)
                     , msg   = d.message
                 ;
-
+console.log('EMAIL MESSAGE:', msg);
                 processEmailResponse(msg);
             },
             error   : function (xhr, status, error) {
@@ -133,9 +133,17 @@ jQuery(document).ready(function ($) {
             clearModalFields();
 
             corey.alert.add('alert-success', message, 5, false);
+            return;
         }
 
-        element.html(message);
+        clearExistingErrors(element);
+        element.parent().append('<div class="error-message">' + message + '</div>');
+    }
+
+    function clearExistingErrors(element) {
+        var form = element.closest('form');
+
+        form.find('.error-message').remove();
     }
 
 });
